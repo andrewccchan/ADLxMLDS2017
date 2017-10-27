@@ -111,7 +111,7 @@ def train_network(speaker_list, graph, params, model_path):
             step += 1
 
         # save checkpoint
-        model_saver.save(sess, model_path, global_step=idx)
+        model_saver.save(sess, model_path)
         # Reset speakers in list
         for s in speaker_list:
             s.reset()

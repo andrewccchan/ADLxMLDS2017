@@ -5,4 +5,4 @@
 
 ## Training
 - To train the RNN model, type `python model_rnn.py $(path_to_data)`. Here `python` is assumed to be an alias of `python3`. The model will be saved to `./rnn_model`.
-- - To train the CNN model, type `python model_cnn.py $(path_to_data)`. Here `python` is assumed to be an alias of `python3`. The model will be saved to `./cnn_model`.
+- To train the CNN model, type `python model_cnn.py $(path_to_data)`. Here `python` is assumed to be an alias of `python3`. The model will be saved to `./cnn_model`.
