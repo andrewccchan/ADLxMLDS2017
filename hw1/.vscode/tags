@@ -1,0 +1,100 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+BatchGenerator	../main.py	/^from utility import BatchGenerator$/;"	kind:namespace	line:6
+BatchGenerator	../test.py	/^from utility import BatchGenerator$/;"	kind:namespace	line:6
+BatchGenerator	../utility.py	/^class BatchGenerator:$/;"	kind:class	line:53
+Speaker	../utility.py	/^class Speaker:$/;"	kind:class	line:7
+X	../utility.py	/^    X = None$/;"	kind:variable	line:8
+__init__	../utility.py	/^    def __init__(self, num_steps, X, y=None):$/;"	kind:member	line:15
+__init__	../utility.py	/^    def __init__(self, speaker_list, batch_size=32):$/;"	kind:member	line:60
+batch_size	../main.py	/^        batch_size = 128,$/;"	kind:variable	line:140
+batch_size	../utility.py	/^    batch_size = 32$/;"	kind:variable	line:55
+begin	../utility.py	/^    begin = 0$/;"	kind:variable	line:13
+build_cnn_lstm_graph	../network.py	/^def build_cnn_lstm_graph(params):$/;"	kind:function	line:22
+build_lstm_graph	../network.py	/^def build_lstm_graph(params):$/;"	kind:function	line:145
+check_next_batch	../utility.py	/^    def check_next_batch(self):$/;"	kind:member	line:69
+cnn_filter_num	../main.py	/^        cnn_filter_num = [32, 32, 32], # 32 filters for each layer$/;"	kind:variable	line:135
+cnn_filter_size	../main.py	/^        cnn_filter_size = 3, # 3x3 filter $/;"	kind:variable	line:133
+cnn_layer_num	../main.py	/^        cnn_layer_num = 3, # number of conv. layers$/;"	kind:variable	line:134
+cnn_pool_size	../main.py	/^        cnn_pool_size = [2, 1, 1], # only pooling in the first layer$/;"	kind:variable	line:136
+conv2d	../network.py	/^def conv2d(x, W):$/;"	kind:function	line:14
+cur_spk	../utility.py	/^    cur_spk = None$/;"	kind:variable	line:57
+data	../main.py	/^    data = utility.merge_features(mfcc_feature, fbank_feature)$/;"	kind:variable	line:147
+eval_network	../main.py	/^def eval_network(sess, test_speaker, graph, params, max_speaker=None):$/;"	kind:function	line:14
+fbank_feature	../main.py	/^    fbank_feature = utility.read_data('.\/data', 'fbank', 'train')$/;"	kind:variable	line:146
+fc_layer_size	../main.py	/^        fc_layer_size = [640, 512, 256], # three layer fully-connected layer$/;"	kind:variable	line:137
+feature_size	../main.py	/^        feature_size = 108,$/;"	kind:variable	line:130
+gen_batch	../utility.py	/^    def gen_batch(self):$/;"	kind:member	line:72
+gen_data	../utility.py	/^    def gen_data(self):$/;"	kind:member	line:37
+gen_speaker_list	../utility.py	/^def gen_speaker_list(phone_reduce_map, phone_idx_map, num_steps, data, labels=None):$/;"	kind:function	line:107
+get_bias_variable	../network.py	/^def get_bias_variable(shape):$/;"	kind:function	line:10
+get_speaker_id	../test.py	/^def get_speaker_id(phone_id):$/;"	kind:function	line:47
+get_weight_variable	../network.py	/^def get_weight_variable(shape):$/;"	kind:function	line:6
+graph	../main.py	/^    graph = network.build_cnn_lstm_graph(params)$/;"	kind:variable	line:158
+has_next	../utility.py	/^    def has_next(self):$/;"	kind:member	line:33
+has_next_batch	../utility.py	/^    has_next_batch = True$/;"	kind:variable	line:58
+has_next_speaker	../utility.py	/^    def has_next_speaker(self):$/;"	kind:member	line:66
+ids	../utility.py	/^    ids = None$/;"	kind:variable	line:11
+labels	../main.py	/^    labels = utility.read_train_labels('.\/data\/train.lab')$/;"	kind:variable	line:149
+learning_rate	../main.py	/^        learning_rate = 1e-4,$/;"	kind:variable	line:139
+logging_file	../main.py	/^    logging_file = '.\/log\/cnn_rnn_lstm\/10'$/;"	kind:variable	line:153
+main.py	../main.py	1;"	kind:file	line:1
+math	../network.py	/^import math$/;"	kind:namespace	line:4
+math	../test.py	/^import math$/;"	kind:namespace	line:7
+math	../utility.py	/^import math$/;"	kind:namespace	line:5
+max_pool	../network.py	/^def max_pool(x, pool_size):$/;"	kind:function	line:18
+merge_features	../utility.py	/^def merge_features(mfcc, fbank):$/;"	kind:function	line:185
+mfcc_feature	../main.py	/^    mfcc_feature = utility.read_data('.\/data', 'mfcc', 'train')$/;"	kind:variable	line:145
+model_name	../test.py	/^    model_name = '10-24'$/;"	kind:variable	line:156
+model_path	../main.py	/^    model_path = '.\/model\/cnn_rnn_lstm\/10'$/;"	kind:variable	line:152
+model_path	../test.py	/^    model_path = '.\/model\/cnn_rnn_lstm\/'$/;"	kind:variable	line:155
+model_rnn.py	../model_rnn.py	1;"	kind:file	line:1
+network	../main.py	/^import network$/;"	kind:namespace	line:5
+network.py	../network.py	1;"	kind:file	line:1
+np	../main.py	/^import numpy as np$/;"	kind:namespace	line:2
+np	../test.py	/^import numpy as np$/;"	kind:namespace	line:3
+np	../utility.py	/^import numpy as np$/;"	kind:namespace	line:3
+num_classes	../main.py	/^        num_classes = 48,$/;"	kind:variable	line:132
+num_epochs	../main.py	/^        num_epochs = 50, # maximal number of epochs$/;"	kind:variable	line:141
+num_steps	../main.py	/^        num_steps = 31, # window size. Can only be a singluar number$/;"	kind:variable	line:131
+num_steps	../utility.py	/^    num_steps = -1$/;"	kind:variable	line:12
+os	../main.py	/^import os$/;"	kind:namespace	line:126
+os	../test.py	/^import os$/;"	kind:namespace	line:152
+os	../test.py	/^import os$/;"	kind:namespace	line:2
+os	../utility.py	/^import os$/;"	kind:namespace	line:2
+output_phone_sequence	../test.py	/^def output_phone_sequence(phone_wise, path, smooth_len=0):$/;"	kind:function	line:63
+output_phone_wise	../test.py	/^def output_phone_wise(phone_wise, file_path, level=0):$/;"	kind:function	line:87
+output_smoothing	../test.py	/^def output_smoothing(phone_wise, length):$/;"	kind:function	line:50
+pair_data_label	../utility.py	/^def pair_data_label(data, labels, phone_idx_map):$/;"	kind:function	line:149
+params	../main.py	/^    params = dict($/;"	kind:variable	line:129
+pd	../utility.py	/^import pandas as pd$/;"	kind:namespace	line:4
+phone_transform	../test.py	/^def phone_transform(idx, level=0):$/;"	kind:function	line:33
+predict	../test.py	/^def predict(speaker_list, model_path, model_name, out_path):$/;"	kind:function	line:94
+process_phone_buffer	../test.py	/^def process_phone_buffer(phone_buffer):$/;"	kind:function	line:13
+read_data	../utility.py	/^def read_data(data_path, fea_type, mode="train"):$/;"	kind:function	line:93
+read_map	../utility.py	/^def read_map(path):$/;"	kind:function	line:161
+read_train_labels	../utility.py	/^def read_train_labels(file_path):$/;"	kind:function	line:101
+reset	../utility.py	/^    def reset(self):$/;"	kind:member	line:50
+rnn_state_size	../main.py	/^        rnn_state_size = 256, $/;"	kind:variable	line:138
+speaker_cnt	../utility.py	/^    speaker_cnt = 0$/;"	kind:variable	line:56
+speaker_list	../main.py	/^    speaker_list = utility.gen_speaker_list(phone_reduce_map, phone_idx_map, params['num_steps'], data, labels)$/;"	kind:variable	line:150
+speaker_list	../test.py	/^    speaker_list = utility.gen_speaker_list(phone_reduce_map, phone_idx_map, 31, test_data)$/;"	kind:variable	line:160
+speaker_list	../utility.py	/^    speaker_list = []$/;"	kind:variable	line:54
+split_train_test	../main.py	/^def split_train_test(data, test_ratio):$/;"	kind:function	line:8
+test.py	../test.py	1;"	kind:file	line:1
+test_data	../test.py	/^    test_data = utility.merge_features(test_data_mfcc, test_data_fbank)$/;"	kind:variable	line:159
+test_data_fbank	../test.py	/^    test_data_fbank = utility.read_data('.\/data', 'fbank', 'train')$/;"	kind:variable	line:158
+test_data_mfcc	../test.py	/^    test_data_mfcc = utility.read_data('.\/data', 'mfcc', 'train')$/;"	kind:variable	line:157
+tf	../main.py	/^import tensorflow as tf$/;"	kind:namespace	line:3
+tf	../network.py	/^import tensorflow as tf$/;"	kind:namespace	line:3
+tf	../test.py	/^import tensorflow as tf$/;"	kind:namespace	line:4
+train_mode	../utility.py	/^    train_mode = False$/;"	kind:variable	line:10
+train_network	../main.py	/^def train_network(speaker_list, graph, params, model_path, logging_file):$/;"	kind:function	line:52
+utility	../main.py	/^import utility$/;"	kind:namespace	line:4
+utility	../test.py	/^import utility$/;"	kind:namespace	line:5
+utility.py	../utility.py	1;"	kind:file	line:1
+y	../utility.py	/^    y = None$/;"	kind:variable	line:9
