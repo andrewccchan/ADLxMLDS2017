@@ -123,7 +123,8 @@ def train_network(speaker_list, graph, params, model_path):
 
     return sess, training_losses
 
-# import os
+import sys
+import os
 if __name__ == '__main__':
     # os.environ['CUDA_VISIBLE_DEVICES']='1'
     params = dict(
@@ -141,12 +142,12 @@ if __name__ == '__main__':
         num_epochs = 25, # maximal number of epochs
     )
 
-    (phone_idx_map, idx_phone_map, idx_char_map, phone_reduce_map, reduce_char_map) = utility.read_map('./data')
-    mfcc_feature = utility.read_data('./data', 'mfcc', 'train')
-    fbank_feature = utility.read_data('./data', 'fbank', 'train')
+    (phone_idx_map, idx_phone_map, idx_char_map, phone_reduce_map, reduce_char_map) = utility.read_map(sys.argv[1])
+    mfcc_feature = utility.read_data(sys.argv[1], 'mfcc', 'train')
+    fbank_feature = utility.read_data(sys.argv[1], 'fbank', 'train')
     data = utility.merge_features(mfcc_feature, fbank_feature)
     # print(data[0])
-    labels = utility.read_train_labels('./data/train.lab')
+    labels = utility.read_train_labels(os.path.join(sys.argv[1], 'label', 'train.lab'))
     speaker_list = utility.gen_speaker_list(phone_reduce_map, phone_idx_map, params['num_steps'], data, labels)
     # (X, y) = utility.pair_data_label(raw_data, labels, phone_idx_map)
     model_path = './cnn_model'
